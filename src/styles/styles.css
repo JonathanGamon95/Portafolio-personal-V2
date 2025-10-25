@@ -96,9 +96,9 @@ p { line-height: 1.6; }
 }
 
 /* =========================================================
-   🧢 HERO / PERFIL
+   🧢 HOME / PERFIL
 ========================================================= */
-.hero-section {
+.home-section {
     min-height: 100vh;
     padding: 40px;
     max-width: 1200px;
@@ -108,18 +108,18 @@ p { line-height: 1.6; }
     justify-content: center;
 }
 
-.hero-container-int {
+.home-container-int {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
 }
 
-.hero-container-int p,
+.home-container-int p,
 .skills-tools-container p {font-weight: 600;}
 
-.hero-name { font-size: 2.5rem; }
-.hero-subTitle { font-weight: 600; }
-.hero-subTitle strong { color: var(--color-accent); font-weight: 600; }
+.home-name { font-size: 2.5rem; }
+.home-subTitle { font-weight: 600; }
+.home-subTitle strong { color: var(--color-accent); font-weight: 600; }
 
 .skills-container p { margin-bottom: 20px; }
 .skills-technology,
@@ -137,7 +137,7 @@ p { line-height: 1.6; }
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
-.hero-img-social-network-container { text-align: center;}
+.home-img-social-network-container { text-align: center;}
 
 .profile-img {
     width: 120px;
@@ -181,7 +181,6 @@ p { line-height: 1.6; }
 .filter-btn.active { background: var(--color-gradient); color: #fff; }
 .filter-btn:hover:not(.active) { background: #e9ecef; }
 
-/* Tarjetas de proyectos */
 .projects-container, .project-category {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -203,7 +202,6 @@ p { line-height: 1.6; }
 
 .project-image { height: 180px; background-size: cover; background-position: center; }
 
-/* Imágenes específicas */
 .arte-visuale-V2 { background-image: url(../assest/imagenes/img-portafolio/landig-page-artDigital-V.2.webp); }
 .barberia-V2 { background-image: url(../assest/imagenes/img-portafolio/landing-page-Barberia-V2-new.webp); }
 .ecommerce-V1 { background-image: url(../assest/imagenes/img-portafolio/tienda_online_v1-new.webp); }
@@ -250,7 +248,6 @@ p { line-height: 1.6; }
 .about-description p { line-height: 1.7; margin-bottom: 20px; font-size: 1rem; }
 .about-description strong { color: var(--color-accent); font-weight: 600; }
 
-/* Contact info */
 .contact-info {
     background-color: var(--color-bg-alt);
     border: 1px solid var(--color-border);
@@ -261,7 +258,6 @@ p { line-height: 1.6; }
 .contact-item { display: flex; align-items: center; margin-bottom: 15px; color: var(--color-text); }
 .contact-item i { width: 20px; margin-right: 15px; color: #6a11cb; }
 
-/* Acciones */
 .about-actions { display: flex; flex-direction: column; gap: 25px;}
 .cv-button {
     display: flex; align-items: center; justify-content: center; gap: 10px;
@@ -271,7 +267,6 @@ p { line-height: 1.6; }
 }
 .cv-button:hover { transform: translateY(-3px); box-shadow: 0 10px 25px rgba(106,17,203,0.4); }
 
-/* Redes sociales */
 .social-links { display: flex; flex-direction: column; gap: 12px; }
 .social-link {
     display: flex; align-items: center; gap: 12px;
@@ -347,7 +342,6 @@ p { line-height: 1.6; }
 .from-center { transform: scale(0.95); }
 .from-center.visible { transform: scale(1); }
 
-/* Duraciones y delays */
 .duration-1s { transition-duration: 1s; }
 .duration-1_2s { transition-duration: 1.2s; }
 .duration-1_4s { transition-duration: 1.4s; }
@@ -364,7 +358,7 @@ p { line-height: 1.6; }
 .hidden { display: none; }
 
 /* =========================================================
-   🌊 BURBUJAS HERO
+   🌊 BURBUJAS HOME
 ========================================================= */
 .bubble {
     width: 90px; height: 90px; border-radius: 50%;
@@ -391,7 +385,7 @@ p { line-height: 1.6; }
 ========================================================= */
 @media (max-width: 768px) {
     body { padding: 0; }
-    .hero-container-int { grid-template-columns: 1fr; gap: 30px; }
+    .home-container-int { grid-template-columns: 1fr; gap: 30px; }
     .about-content { grid-template-columns: 1fr; gap: 30px; }
     .header-int { border-radius: 0; }
     .header-int.fade-in-element { animation: none !important; opacity: 1 !important; transform: none !important; }
