@@ -211,6 +211,7 @@ p { line-height: 1.6; }
 
 .project-content { padding: 20px; }
 .project-title { font-size: 1.3rem; font-weight: 700; margin-bottom: 10px; }
+.project-title span { padding: 2px 5px; background: var(--color-accent); border-radius: 5px; color: #fff;}
 .project-description { line-height: 1.5; margin-bottom: 15px; }
 .project-tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
 .tool-tag { background: var(--color-gradient); color: #fff; padding: 5px 10px; border-radius: 20px; font-size: 0.8rem; font-weight: 500; }
