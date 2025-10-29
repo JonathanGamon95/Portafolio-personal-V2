@@ -2,7 +2,7 @@
    🌈 VARIABLES Y PALETA DE COLORES
 ========================================================= */
 :root {
-    --color-bg: #fff;
+    --color-bg: #E5E5F7;
     --color-bg-alt: #f8f9fa;
     --color-card: #ffffff;
     --color-text: #1a1a1a;
@@ -119,7 +119,7 @@ p { line-height: 1.6; font-weight: 300;}
 .home-subTitle { font-weight: 600; }
 .home-subTitle strong { color: var(--color-accent); font-weight: 600; }
 
-.skills-container p { margin-bottom: 20px; }
+.skills-container p { margin-bottom: 20px; font-weight: 500;}
 .skills-technology,
 .skills-tools {
     display: flex;
@@ -147,6 +147,7 @@ p { line-height: 1.6; font-weight: 300;}
     background-image: url(../assest/imagenes/inicio/foto-perfil.webp);
     background-size: cover;
     background-position: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* =========================================================
@@ -253,6 +254,7 @@ p { line-height: 1.6; font-weight: 300;}
     padding: 20px;
     border-radius: 12px;
     border-left: 4px solid #6a11cb;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 .contact-item { display: flex; align-items: center; margin-bottom: 15px; color: var(--color-text); }
 .contact-item i { width: 20px; margin-right: 15px; color: #6a11cb; }
@@ -270,7 +272,7 @@ p { line-height: 1.6; font-weight: 300;}
 .social-link {
     display: flex; align-items: center; gap: 12px;
     padding: 12px 20px; background-color: var(--color-bg-alt); color: var(--color-text);
-    border-radius: 10px; text-decoration: none; font-weight: 500; border: 1px solid var(--color-border);
+    border-radius: 10px; text-decoration: none; font-weight: 500; border: 1px solid var(--color-border); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 .social-link:hover { transform: translateX(5px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
 .social-link.linkedin:hover { color: #0077b5; border-color: #0077b5; }
@@ -286,6 +288,7 @@ p { line-height: 1.6; font-weight: 300;}
     text-align: center;
     border-radius: 15px;
     margin-top: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 .cta-text { font-size: 1.3rem; margin-bottom: 20px; }
 .cta-button {
@@ -385,6 +388,7 @@ p { line-height: 1.6; font-weight: 300;}
 @media (max-width: 768px) {
     body { padding: 0; }
     .home-container-int { grid-template-columns: 1fr; gap: 30px; }
+    .skills-technology, .skills-tools {justify-content: center;}
     .about-content { grid-template-columns: 1fr; gap: 30px; }
     .header-int { border-radius: 0; }
     .header-int.fade-in-element { animation: none !important; opacity: 1 !important; transform: none !important; }
