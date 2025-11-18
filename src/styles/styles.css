@@ -41,7 +41,6 @@ body {
     background: var(--color-bg);
     background-attachment: fixed;
     min-height: 100vh;
-    padding: 20px;
     color: var(--color-text);
 }
 
@@ -142,12 +141,19 @@ p { line-height: 1.6; font-weight: 300;}
     height: 120px;
     border-radius: 50%;
     border: 3px solid var(--color-border);
-    margin: 0 auto 20px;
+    margin: 0 auto;
     background-color: #fff;
     background-image: url(../assest/imagenes/inicio/foto-perfil.webp);
     background-size: cover;
     background-position: center;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-actions-home {
+    margin: 0 20%;
+    display: flex; 
+    flex-direction: 
+    column; gap: 25px;
 }
 
 /* =========================================================
@@ -282,6 +288,10 @@ p { line-height: 1.6; font-weight: 300;}
    🚀 CTA
 ========================================================= */
 .cta-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
     background-color: var(--color-bg-alt);
     border: 1px solid var(--color-border);
     padding: 30px;
@@ -389,8 +399,10 @@ p { line-height: 1.6; font-weight: 300;}
     body { padding: 0; }
     .home-container-int { grid-template-columns: 1fr; gap: 30px; }
     .skills-technology, .skills-tools {justify-content: center;}
+    .about-actions-home {margin: 0;}
     .about-content { grid-template-columns: 1fr; gap: 30px; }
     .header-int { border-radius: 0; }
     .header-int.fade-in-element { animation: none !important; opacity: 1 !important; transform: none !important; }
     .content { grid-template-columns: 1fr; gap: 30px; }
+    .cta-section {flex-direction: column;}
 }
