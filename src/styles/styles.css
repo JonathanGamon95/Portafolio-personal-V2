@@ -137,8 +137,8 @@ p { line-height: 1.6; font-weight: 300;}
 .home-img-social-network-container { text-align: center;}
 
 .profile-img {
-    width: 120px;
-    height: 120px;
+    width: 220px;
+    height: 220px;
     border-radius: 50%;
     border: 3px solid var(--color-border);
     margin: 0 auto;
@@ -398,6 +398,8 @@ p { line-height: 1.6; font-weight: 300;}
 @media (max-width: 768px) {
     body { padding: 0; }
     .home-container-int { grid-template-columns: 1fr; gap: 30px; }
+    .skills-it-container p, .skills-tools-container p {text-align: center;}
+    .profile-img {width: 150px; height: 150px;}
     .skills-technology, .skills-tools {justify-content: center;}
     .about-actions-home {margin: 0;}
     .about-content { grid-template-columns: 1fr; gap: 30px; }
