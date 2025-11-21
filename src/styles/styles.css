@@ -326,7 +326,7 @@ p { line-height: 1.6; font-weight: 300;}
    🌓 MENÚ Y BOTONES
 ========================================================= */
 .menu-butons {
-    display: flex; flex-direction: column; gap: 10px;
+    display: flex; gap: 10px;
     position: fixed; top: 20px; right: 20px;
 }
 .theme-toggle {
@@ -407,4 +407,5 @@ p { line-height: 1.6; font-weight: 300;}
     .header-int.fade-in-element { animation: none !important; opacity: 1 !important; transform: none !important; }
     .content { grid-template-columns: 1fr; gap: 30px; }
     .cta-section {flex-direction: column;}
+    .menu-butons {flex-direction: column;}
 }
